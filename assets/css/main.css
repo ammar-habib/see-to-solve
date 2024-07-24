@@ -203,7 +203,6 @@ h3, .h3 {
 .navbar {
     --bs-navbar-padding-x : 1.875rem;
     --bs-navbar-padding-y : 0.938rem;
-    margin                : 0 0 16px;
     background-color      : #fff;
 }
 
@@ -264,6 +263,9 @@ h3, .h3 {
 }
 
 @media (width < 1199.98px) {
+    .page-content {
+        padding : 1rem 0;
+    }
     .navbar {
         justify-content : space-between;
         flex-wrap       : wrap;
