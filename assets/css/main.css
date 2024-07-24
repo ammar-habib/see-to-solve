@@ -259,13 +259,13 @@ h3, .h3 {
     --bs-btn-active-shadow       : none;
 }
 
-@media (max-width:  1439.98px  ) {
+@media (max-width : 1439.98px  ) {
     .headerFields select {
         width : 180px;
     }
 }
 
-@media (max-width:  1199.98px) {
+@media (max-width : 1199.98px) {
     .page-content {
         padding : 1rem 0;
     }
@@ -293,10 +293,12 @@ h3, .h3 {
     .printToolbar .printToolbar__title {
         display : none;
     }
-    .printToolbar .btn-outline-light{
-        border: none;
-        justify-content: end;
+
+    .printToolbar .btn-outline-light {
+        border          : none;
+        justify-content : end;
     }
+
     .printToolbar .btn__icon {
         margin-right : 0;
     }
@@ -310,13 +312,23 @@ h3, .h3 {
     flex-wrap     : wrap;
 }
 
-@media (max-width:  1199.98px) {
+@media (max-width : 1199.98px) {
     .actionsToolbar__title {
         display : block;
         width   : 100%;
     }
 }
 
+@media (max-width : 575.98px) {
+    .actionsToolbar {
+        margin-right : -10px;
+    }
+
+    .actionsToolbar .btn {
+        width     : 30.33%;
+        min-width : auto;
+    }
+}
 
 .infoCard {
     margin-bottom : 24px;
@@ -419,4 +431,18 @@ h3, .h3 {
     width     : 100%;
     height    : 100%;
     cursor    : pointer;
+}
+
+@media screen and (max-width : 767.98px) {
+    .infoCard__list {
+        padding       : 8px 12px;
+        gap           : 20px;
+        height        : auto;
+        margin-bottom : 0;
+    }
+
+    .infoCard__list .btn-sm {
+        padding   : 4px 11px 4px 10px;
+        min-width : 50px;
+    }
 }
