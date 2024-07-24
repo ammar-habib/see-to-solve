@@ -259,17 +259,13 @@ h3, .h3 {
     --bs-btn-active-shadow       : none;
 }
 
-@media (width < 1439.98px
-
-) {
+@media (max-width:  1439.98px  ) {
     .headerFields select {
         width : 180px;
     }
 }
 
-@media (width < 1199.98px
-
-) {
+@media (max-width:  1199.98px) {
     .page-content {
         padding : 1rem 0;
     }
@@ -297,6 +293,13 @@ h3, .h3 {
     .printToolbar .printToolbar__title {
         display : none;
     }
+    .printToolbar .btn-outline-light{
+        border: none;
+        justify-content: end;
+    }
+    .printToolbar .btn__icon {
+        margin-right : 0;
+    }
 }
 
 .actionsToolbar {
@@ -307,9 +310,7 @@ h3, .h3 {
     flex-wrap     : wrap;
 }
 
-@media (width < 1199.98px
-
-) {
+@media (max-width:  1199.98px) {
     .actionsToolbar__title {
         display : block;
         width   : 100%;
