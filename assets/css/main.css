@@ -82,7 +82,7 @@ h3, .h3 {
 
 .form-select {
     --form-select-bg-img : url('data:image/svg+xml,<svg width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"><path d="m4 0 4 5H0l4-5zm4 7H0l4 5 4-5z" fill="%23000" fill-rule="nonzero"/></svg>');
-    padding              : 12px 10px 12px 14px;
+    padding              : 12px 20px 12px 12px;
     font-size            : 0.875rem;
     font-weight          : 400;
     line-height          : normal;
@@ -94,6 +94,9 @@ h3, .h3 {
     background-size      : 16px 12px;
     border               : 1px solid var(--border-color);
     border-radius        : 5px;
+    overflow             : hidden;
+    white-space          : nowrap;
+    text-overflow        : ellipsis;
 }
 
 .form-select:focus,
@@ -209,7 +212,7 @@ h3, .h3 {
 .navbar-brand {
     padding      : 0;
     margin-right : 2.266rem;
-    margin-top: -4px;
+    margin-top   : -4px;
 }
 
 .headerFields {
@@ -256,33 +259,40 @@ h3, .h3 {
     --bs-btn-active-shadow       : none;
 }
 
-@media (width < 1439.98px) {
+@media (width < 1439.98px
+
+) {
     .headerFields select {
         width : 180px;
     }
 }
 
-@media (width < 1199.98px) {
+@media (width < 1199.98px
+
+) {
     .page-content {
         padding : 1rem 0;
     }
+
     .navbar {
         justify-content : space-between;
         flex-wrap       : wrap;
-        padding: 12px 16px;
-        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+        padding         : 12px 16px;
+        box-shadow      : 0 2px 20px 0 rgba(0, 0, 0, 0.05);
     }
 
     .headerFields {
-        order : 2;
-        width: 100%;
-        padding-top: 12px;
-        margin-top: 12px;
-        border-top: solid 1px #e7e7e7;
+        order       : 2;
+        width       : 100%;
+        padding-top : 12px;
+        margin-top  : 12px;
+        border-top  : solid 1px #e7e7e7;
     }
+
     .headerFields select {
         width : 33.33%;
     }
+
     .printToolbar .btn-group,
     .printToolbar .printToolbar__title {
         display : none;
@@ -294,14 +304,19 @@ h3, .h3 {
     gap           : 0.625rem;
     align-items   : center;
     margin-bottom : 1rem;
-    flex-wrap: wrap;
+    flex-wrap     : wrap;
 }
-@media (width < 1199.98px) {
+
+@media (width < 1199.98px
+
+) {
     .actionsToolbar__title {
-        display       : block;
-       width: 100%;
+        display : block;
+        width   : 100%;
     }
 }
+
+
 .infoCard {
     margin-bottom : 24px;
     padding       : 15px 15px 20px 15px;
